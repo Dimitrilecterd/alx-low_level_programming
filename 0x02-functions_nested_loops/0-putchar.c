@@ -1,4 +1,4 @@
-#inclide "main.h"
+#include "main.h"
 /**
  * main - Start
  * Return: 0
