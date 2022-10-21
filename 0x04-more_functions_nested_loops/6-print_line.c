@@ -2,9 +2,7 @@
 
 /**
  * print_line - prints straight line n times, using ('_')
- *
  * @n: the number of ('_') to be printed
- *
  * Return: no return.
  */
 
