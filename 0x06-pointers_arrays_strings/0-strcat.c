@@ -11,7 +11,7 @@
 char *_strcat(char *dest, char *src)
 {
 	int best = 0;
-	int best2 = 0
+	int best2 = 0;
 
 	while (*(dest + best) != '\0')
 	{
