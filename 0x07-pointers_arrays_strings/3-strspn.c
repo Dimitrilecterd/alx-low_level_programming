@@ -24,9 +24,12 @@ unsigned int _strspn(char *s, char *accept)
 			}
 
 			if (accept[b + 1] == '\0' && s[a] != accept[j])
-
 				return (pairs);
 		}
-	}
-}
 
+		b++;
+	}
+
+	return (pairs);
+
+}
