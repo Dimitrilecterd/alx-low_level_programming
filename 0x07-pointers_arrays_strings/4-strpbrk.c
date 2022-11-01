@@ -1,5 +1,4 @@
 #include "main.h"
-#define NULL 0
 
 /**
  * _strpbrk - return pointer to byte in s that matches a byte in accept
@@ -28,6 +27,6 @@ char *_strpbrk(char *s, char *accept)
 		a++;
 	}
 
-	return (NULL);
+	return ('\0');
 
 }
