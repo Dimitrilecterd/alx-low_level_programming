@@ -27,7 +27,7 @@ unsigned int _strspn(char *s, char *accept)
 				return (pairs);
 		}
 
-		b++;
+		a++;
 	}
 
 	return (pairs);
