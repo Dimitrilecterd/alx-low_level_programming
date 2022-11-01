@@ -23,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 
-			if (accept[b + 1] == '\0' && s[a] != accept[j])
+			if (accept[b + 1] == '\0' && s[a] != accept[b])
 				return (pairs);
 		}
 
