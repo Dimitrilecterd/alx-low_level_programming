@@ -10,26 +10,25 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int a = 0, b;
-	int pairs = 0;
+	unsigned int bin = 0;
+	int xin;
 
-	while (s[a] != '\0') /*iterate through string*/
+	while (*s)
 	{
-		for (b = 0; accept[b] != '\0'; b++) /*iterate through target*/
+		for (xin = 0; accept[xin]; xin++)
 		{
-			if (s[a] == accept[b]) /*record & break at first match*/
+			if (*s == accept[xin])
 			{
-				pairs++;
+				bin++;
 				break;
 			}
 
-			if (accept[b + 1] == '\0' && s[a] != accept[b])
-				return (pairs); /*return if idx doesn't match*/
+			else if (accept[xin + 1] == '\0')
+				return (bin);
 		}
 
-		a++;
+		s++;
 	}
 
-	return (pairs); /* return num if all match till end */
-
+	return (bin);
 }
