@@ -4,18 +4,17 @@
  * print_chessboard - a function that prints the chessboard.
  * @a: 2D array
  *
- * Return: 0
  */
 
 void print_chessboard(char (*a)[8])
 {
-	int b;
-	int c;
+	int row;
+	int column;
 
-	for (b = 0; b < 8; b++)
+	for (row = 0; row < 8; row++)
 	{
-		for (c = 0; c < 8; c++)
-			_putchar(a[b][c]);
+		for (column = 0; column < 8; column++)
+			_putchar(a[row][column]);
 		_putchar('\n');
 	}
 }
